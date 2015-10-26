@@ -1,0 +1,64 @@
+html, body {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00b7ff;
+}
+
+iframe#fluid {
+    width: 333px;
+    height: 480px;
+    border-width: 0;
+}
+
+svg#gauge {
+    width: 100%;
+    height: 300px;  
+}
+
+iframe#linechart {
+    width: 100%;
+    height: 480px;
+    border-width: 0;
+}
+
+div#linechart {
+    left: 40px;
+    width: 700px;
+    position: absolute;
+    height: 364px;  
+    margin-top: 16px;
+    margin-right: 16px;
+}
+
+#legend {
+    position: absolute;
+    bottom: 0px;
+}
+
+#Y {
+    position: absolute;
+    height: 364px;
+    width: 40px;
+    margin-top: 16px;
+}
+
+span.detail_swatch {
+    padding: 1px 4px;
+    margin: 0px 4px 0px 0px;
+}
+
+div.date {
+    padding-top: 6px;
+}
+
+span.values {
+    font-size: 1.4em;
+    font-weight: 600;
+}

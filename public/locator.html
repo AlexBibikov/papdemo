@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<button onclick="getLocation()">Locate Me </button>
+<p id="demo"></p>
+<a id="link" href="sms://2143541429;body='empty'">Send coordinates</a>
+<script>
+var x = document.getElementById("demo");
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } 
+}
+function showPosition(position) {
+    x.innerHTML = "Latitude: " + position.coords.latitude + 
+    "<br>Longitude: " + position.coords.longitude;
+    
+    var href = "sms://2143541429;body=Latitude:" + position.coords.latitude + ",Longitude:" + position.coords.longitude + ",Altitude:" + position.coords.altitude;
+    document.getElementById("link").setAttribute("href", href);
+}
+</script>
+</html>
